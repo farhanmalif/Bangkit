@@ -1,0 +1,187 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient colors */
+  color: white; /* Text color */
+  padding: 40px 20px; /* Padding for top/bottom and left/right */
+  text-align: center; /* Align text to the center */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin-bottom: 20px;
+}
+
+.header-text {
+  margin-left: 20px;
+}
+
+header img {
+  width: 400px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.navi {
+  width: 100%;
+  background-color:  linear-gradient(to right, #ff7e5f, #feb47b);;
+  overflow-y: hidden;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the navigation bar */
+}
+
+/* Navigation links */
+.navi a {
+  flex: 1; /* Equal width for each link */
+  padding: 70px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+}
+
+/* Add a background color on mouse-over */
+.navi a:hover {
+  background-color: #000;
+}
+
+/* Style the current/active link */
+.navi a.active {
+  background-color: #04AA6D;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navi a {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.articles-container article {
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff; /* optional: add a background color */
+  margin-bottom: 20px; /* add space between articles */
+}
+
+.about-me {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff; /* optional: add a background color */
+  max-width: 500px;
+}
+
+.Personal {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+
+.ability {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff; /* optional: add a background color */
+}
+
+.expertise {
+  margin-top: 10px;
+}
+
+.expertise-item {
+  margin-bottom: 10px;
+}
+
+.expertise-label {
+  margin-bottom: 5px;
+}
+
+.expertise-bar {
+  background-color: #ddd;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  background-color: #4caf50;
+}
+
+
+article, aside {
+  flex: 1;
+  margin-right: 20px;
+}
+
+footer {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.label {
+  display: inline-block;
+  width: 100px; /* Adjust this width as needed */
+  text-align: right;
+  margin-right: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  min-width: 500px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
